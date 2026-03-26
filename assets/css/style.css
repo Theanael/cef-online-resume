@@ -2,5 +2,85 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url("../fonts/Raleway-Italic-VariableFont_wght.woff");
+    src: url("../fonts/Raleway-VariableFont_wght.woff");
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    justify-items: center;
+    margin:0;
+}
+
+h1,h2,h3,strong {
+    font-family: "Lato", sans-serif;/* Lato seems to have inconsistent letter spacing but as I was specifically instructed to use it there's not much I can do */
+}
+
+
+body >*{
+    width: 1160px;
+}
+
+img{
+    width: 1em;
+
+}
+
+img.pixel-perfect-overlay {
+    width: initial;
+}
+
+header{
+    background-color: #17abb3;
+    display: flex;
+    
+}
+
+header > img {
+    margin: 45px 100px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-sizing: border-box;
+}
+
+header div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 28px;
+}
+header div h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+
+header div strong{
+    font-size: 1.5em;
+    margin:5px
+}
+
+header address{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 245px;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+
+header address img {width: 20px;}
+
+header address > * {
+    color: white;
+    font-style: normal;
+    text-decoration: unset;
+    display: flex;
+    gap: 9px;
+    justify-content: start;
+    align-content: stretch;
+    width: 96px;
 }
