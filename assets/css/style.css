@@ -72,7 +72,9 @@ header address{
     justify-content: space-between;
 }
 
-header address img {width: 20px;}
+header address img {
+    width: 20px;
+}
 
 header address > * {
     color: white;
@@ -83,4 +85,68 @@ header address > * {
     justify-content: start;
     align-content: stretch;
     width: 96px;
+}
+
+main {
+    display: flex;
+}
+
+aside section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+    color: #17abb3;
+    font-weight: normal;
+    border-bottom: 1px #e3e3e3 solid;
+}
+
+aside {
+    background-color: #f5f5f5;
+    width: 345px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: 51px;
+}
+
+aside section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 47px 35px;
+}
+
+aside h3 {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+aside span {width: 150px;display: flex;gap: 2px;justify-content: flex-end;padding-right: 2px;height: 29px;align-items: flex-end;text-wrap-mode: nowrap;font-weight: 600;letter-spacing: 0.25px;}
+
+
+ul {
+    padding-left: 25px;
+    margin-top: 12px;
+    list-style: square;
+    font-size: 16px;
+    height: 64px;
+    line-height: 20px;
+}
+
+li::marker {
+    font-size: 25px;
+    color: #17abb3;
+}
+
+main div {
+    flex: 1;
+}
+
+aside li {
+    font-weight: 600;
 }
