@@ -142,11 +142,53 @@ li::marker {
     font-size: 25px;
     color: #17abb3;
 }
-
-main div {
-    flex: 1;
-}
-
 aside li {
     font-weight: 600;
+}
+
+main > div {
+    flex: 1;
+    padding: 50px;
+}
+
+
+main p {
+    text-indent: 25px;
+    margin: 0;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.279px;
+}
+
+main div h2 {
+    margin-bottom: 20px;
+}
+
+main div section {
+    margin-bottom: 26px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+section small {
+    flex: 90%;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+main div section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+main time {
+    color: #17abb3;
+    font-weight: bold;
 }
