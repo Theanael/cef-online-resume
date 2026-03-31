@@ -9,6 +9,7 @@ body{
     font-family: "Raleway", sans-serif;
     justify-items: center;
     margin:0;
+    background-color: #EEF1F2;
 }
 
 h1,h2,h3,strong {
@@ -20,14 +21,11 @@ body >*{
     width: 1160px;
 }
 
-img{
+aside img{
     width: 1em;
 
 }
 
-img.pixel-perfect-overlay {
-    width: initial;
-}
 
 header{
     background-color: #17abb3;
@@ -172,6 +170,7 @@ main div section {
 h3 {
     margin: 0;
     font-size: 16px;
+    color:#333333
 }
 
 section small {
@@ -191,4 +190,32 @@ main div section div {
 main time {
     color: #17abb3;
     font-weight: bold;
+}
+
+footer img {
+    width: 31px;
+}
+
+footer address {
+    display: flex;
+    gap: 17px;
+    padding: 10px 0 9px;
+}
+
+footer small {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #17abb3;
+    align-items: center;
+    padding: 10px;
+    font-weight: 600;
+    box-sizing: border-box;
+    color:white
 }
