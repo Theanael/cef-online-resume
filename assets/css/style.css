@@ -16,16 +16,44 @@ h1,h2,h3,strong {
     font-family: "Lato", sans-serif;/* Lato seems to have inconsistent letter spacing but as I was specifically instructed to use it there's not much I can do */
 }
 
+h2 {
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+    color: #17abb3;
+    font-weight: normal;
+    border-bottom: 1px #e3e3e3 solid;
+}
+
+ul {
+    padding-left: 25px;
+    margin-top: 12px;
+    list-style: square;
+    font-size: 16px;
+    height: 64px;
+    line-height: 20px;
+}
+
+li::marker {
+    font-size: 25px;
+    color: #17abb3;
+}
+
+h3 {
+    margin: 0;
+    font-size: 16px;
+    color:#333333
+}
 
 body >*{
     width: 1160px;
 }
 
-aside img{
-    width: 1em;
 
+
+
+header > a > img {
+    cursor: zoom-in;
 }
-
 
 header{
     background-color: #17abb3;
@@ -33,13 +61,22 @@ header{
     
 }
 
-header > img {
+header > a {
     margin: 45px 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor:zoom-in;
+}
+
+header >a > img {
     width: 150px;
     border-radius: 50%;
     border: 5px solid #ffffff;
     box-sizing: border-box;
 }
+
+
 
 header div{
     width: 100%;
@@ -89,6 +126,11 @@ main {
     display: flex;
 }
 
+aside img{
+    width: 1em;
+
+}
+
 aside section div {
     display: flex;
     justify-content: space-between;
@@ -96,13 +138,7 @@ aside section div {
     gap: 2px;
 }
 
-h2 {
-    margin: 0 0 10px;
-    padding-bottom: 10px;
-    color: #17abb3;
-    font-weight: normal;
-    border-bottom: 1px #e3e3e3 solid;
-}
+
 
 aside {
     background-color: #f5f5f5;
@@ -124,22 +160,19 @@ aside h3 {
     font-size: 1em;
 }
 
-aside span {width: 150px;display: flex;gap: 2px;justify-content: flex-end;padding-right: 2px;height: 29px;align-items: flex-end;text-wrap-mode: nowrap;font-weight: 600;letter-spacing: 0.25px;}
-
-
-ul {
-    padding-left: 25px;
-    margin-top: 12px;
-    list-style: square;
-    font-size: 16px;
-    height: 64px;
-    line-height: 20px;
+aside span {
+    width: 150px;
+    display: flex;
+    gap: 2px;
+    justify-content: flex-end;
+    padding-right: 2px;
+    height: 29px;
+    align-items: flex-end;
+    text-wrap-mode: nowrap;
+    font-weight: 600;
+    letter-spacing: 0.25px;
 }
 
-li::marker {
-    font-size: 25px;
-    color: #17abb3;
-}
 aside li {
     font-weight: 600;
 }
@@ -149,8 +182,7 @@ main > div {
     padding: 50px;
 }
 
-
-main p {
+main > div p {
     text-indent: 25px;
     margin: 0;
     text-align: justify;
@@ -159,19 +191,15 @@ main p {
     letter-spacing: 0.279px;
 }
 
-main div h2 {
+main > div h2 {
     margin-bottom: 20px;
 }
 
-main div section {
+main > div section {
     margin-bottom: 26px;
 }
 
-h3 {
-    margin: 0;
-    font-size: 16px;
-    color:#333333
-}
+
 
 section small {
     flex: 90%;
@@ -180,7 +208,7 @@ section small {
     font-weight: 600;
 }
 
-main div section div {
+main > div section div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -219,3 +247,12 @@ footer {
     box-sizing: border-box;
     color:white
 }
+
+
+main div section div:hover {
+    border-left: #17abb3 solid 5px;
+    padding: 10px;
+    background-color: #e3e3e3;
+}
+
+
